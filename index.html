@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Quiz Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="quiz-card">
+      <header>
+        <h1>⚡ Interactive Quiz</h1>
+        <div class="progress-section">
+          <div id="progress-text">Question 1 / 10</div>
+          <div class="progress-bar">
+            <div id="progress-fill"></div>
+          </div>
+        </div>
+        <div id="timer" class="timer">⏱️ 10s</div>
+      </header>
+
+      <main id="quiz-box">
+        <h2 id="question">Loading Question...</h2>
+        <div id="choices" class="choices"></div>
+        <button id="next-btn" class="btn">Next ➡️</button>
+      </main>
+
+      <div id="result-box" class="hidden result-box">
+        <h2>🎉 Quiz Completed!</h2>
+        <p id="score"></p>
+        <div id="summary"></div>
+        <button id="restart-btn" class="btn restart">🔄 Restart Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
